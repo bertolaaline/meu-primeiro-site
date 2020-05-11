@@ -1,0 +1,40 @@
+body {
+    background: #d88bd2;
+    background: auto 500vh;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #e9bdce;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color:white;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    color:white;
+  }
+  
+  a,a:active, a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+    color: black;
+  }
+  
