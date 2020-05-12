@@ -1,40 +1,95 @@
+/* reset do css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: #d88bd2;
-    background: auto 500vh;
-    font-family: sans-serif;
-    height: 100vh;
+  background: #d88bd2;
+  background: auto 500vh;
+  font-family: sans-serif;
+  height: 100vh;
+  font-size: 12px;
+}
+@media (min-width: 400px) {
+  body{
+    font-size: 14px;
   }
-  
-  .menu {
-    background-color: #e9bdce;
+}
+
+@media (min-width: 600px) {
+  body{
+    font-size: 18px;
   }
-  
-  .menu li{
-    list-style: none;
-  }
-  
-  .menu ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    color:white;
-    text-align: center;
-  }
-  
-  .site-subtitle{
-    color:white;
-  }
-  
-  a,a:active, a:visited{
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-    color: black;
-  }
-  
+}
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+.menu {
+  background-color: #e9bdce;
+}
+
+.menu li{
+  list-style: none;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-subtitle,
+.site-title {
+  color:white;
+  text-align: center;
+}
+
+.site-subtitle {
+  color:white;
+}
+.portfolio-subtitle {
+display: block;
+padding: 3em;
+text-align: center;
+}
+.site-title {
+  font-size: 2em;
+}
+
+a,a:active, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.img-portfolio{
+  width: 180px;
+}
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  background-color: #e9bdce;
+}
+.itens {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
