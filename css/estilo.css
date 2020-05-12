@@ -7,9 +7,8 @@
 }
 
 body {
-  background: #d88bd2;
   background: auto 500vh;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: 100vh;
   font-size: 12px;
 }
@@ -29,6 +28,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 nav {
   position: fixed;
@@ -40,7 +43,7 @@ nav {
   padding: 10px 20px;
 }
 .menu {
-  background-color: #e9bdce;
+  background-color: #fff;
 }
 
 .menu li{
@@ -86,10 +89,21 @@ a:hover{
 .portfolio{
   display: flex;
   flex-direction: column;
-  background-color: #e9bdce;
+  background-color: #fff;
 }
 .itens {
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+padding-bottom: 3em;
+align-items: baseline;
+flex-wrap: wrap;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.itens figure {
+  margin-top: 1em;
 }
