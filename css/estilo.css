@@ -12,17 +12,7 @@ body {
   height: 100vh;
   font-size: 12px;
 }
-@media (min-width: 400px) {
-  body{
-    font-size: 14px;
-  }
-}
 
-@media (min-width: 600px) {
-  body{
-    font-size: 18px;
-  }
-}
 header {
   height: 100vh;
   display: flex;
@@ -65,9 +55,9 @@ nav {
   color:white;
 }
 .portfolio-subtitle {
-display: block;
-padding: 3em;
-text-align: center;
+  display: block;
+  padding: 3em;
+  text-align: center;
 }
 .site-title {
   font-size: 2em;
@@ -84,20 +74,22 @@ a:hover{
 }
 
 .img-portfolio{
-  width: 180px;
+  width: 80px;
 }
 .portfolio{
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  height: 100vh;
+  justify-content: center;
 }
 .itens {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding-bottom: 3em;
-align-items: baseline;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 3em;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 figcaption {
@@ -105,5 +97,57 @@ figcaption {
 }
 
 .itens figure {
-  margin-top: 1em;
+  margin-top: 2em;
+  filter: opacity(50%) grayscale(100%);
+}
+.itens figure:hover {
+  filter: opacity(100%) grayscale(0);
+}
+.itens a{
+  padding: 0 20px;
+}
+.separador {
+  height: 100vh;
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 2em;
+  
+}
+.separador h2,
+.separador h3 {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.separador h3 {
+  margin-top: 1.5em;
+}
+.img-contato{
+  width: 80px;
+}
+.fig-contato {
+  text-align: center;
+}
+@media (min-width: 400px) {
+  body{
+    font-size: 14px;
+  }
+  .img-contato{
+    width: 140px;
+  }
+}
+
+@media (min-width: 600px) {
+  body{
+    font-size: 18px;
+  }
+  .img-contato{
+    width: 200px;
+  }
 }
