@@ -58,11 +58,11 @@ header {
 }
 .sobre .avatar{
   float: left;
-  margin-right: 2em;
+  text-align: center;
 }
 .sobre .avatar img{
   border-radius: 20px;
-  
+  width: 50%;
 }
 
 nav {
@@ -217,6 +217,10 @@ figcaption {
   .img-contato{
     width: 140px;
   }
+  .sobre .avatar img{
+    width: 50%;
+  }
+  
 }
 
 @media (min-width: 600px) {
@@ -225,6 +229,16 @@ figcaption {
   }
   .img-contato{
     width: 200px;
+  }
+}
+
+@media(min-width: 800px){
+  .sobre .avatar{
+    float: left;
+    margin-right: 2em;
+  }
+  .sobre .avatar img{
+    width: 100%;
   }
 }
 
